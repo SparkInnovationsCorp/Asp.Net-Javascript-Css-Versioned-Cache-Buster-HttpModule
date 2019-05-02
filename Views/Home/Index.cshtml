@@ -1,0 +1,69 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Cache Buster Module</h1>
+    <p class="lead">This is just a simple project to demo the cache buster code.  Look at the source of this page, and notice how all script and link references have been versioned using the assemlby version of this web project!</p>
+    <p><a href="https://www.linkedin.com/in/jasonbramble/" class="btn btn-primary btn-lg">Got questions?  Ask me on LinkedIn! &raquo;</a></p>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h2>To Use...</h2>
+        <p>
+            <ul>
+                <li>Copy the CacheBusterModule.cs to your project.</li>
+                <li>Add a modules reference to your web.config pointing ot the assembly and module name.</li>
+                <li>Check that task off, sit back, and have a coffee!</li>
+            </ul>
+        </p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <h2>Before</h2>
+        <pre>
+            &lt;html&gt;
+            &lt;head&gt;
+                &lt;meta charset="utf-8" /&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;title&gt;Home Page - My ASP.NET Application&lt;/title&gt;
+                &lt;link href="/Content/bootstrap.css" rel="stylesheet" /&gt;
+                &lt;link href="/Content/site.css" rel="stylesheet" /&gt;
+
+                &lt;script src="/Scripts/modernizr-2.8.3.js"&gt;&lt;/script&gt;
+
+            &lt;/head&gt;
+            &lt;body&gt;
+            ...
+                &lt;script src="/Scripts/jquery-3.3.1.js"&gt;&lt;/script&gt;
+                &lt;script src="/Scripts/bootstrap.js"&gt;&lt;/script&gt;
+            ...
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </pre>
+    </div>
+    <div class="col-md-6">
+        <h2>After</h2>
+        <pre>
+            &lt;html&gt;
+            &lt;head&gt;
+                &lt;meta charset="utf-8" /&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;title&gt;Home Page - My ASP.NET Application&lt;/title&gt;
+                &lt;link href="/Content/bootstrap.css<span style="background-color: yellow;">?v=1.0.0.0</span>" rel="stylesheet" /&gt;
+                &lt;link href="/Content/site.css<span style="background-color: yellow;">?v=1.0.0.0</span>" rel="stylesheet" /&gt;
+
+                &lt;script src="/Scripts/modernizr-2.8.3.js<span style="background-color: yellow;">?v=1.0.0.0</span>"&gt;&lt;/script&gt;
+
+            &lt;/head&gt;
+            &lt;body&gt;
+            ...
+                &lt;script src="/Scripts/jquery-3.3.1.js<span style="background-color: yellow;">?v=1.0.0.0</span>"&gt;&lt;/script&gt;
+                &lt;script src="/Scripts/bootstrap.js<span style="background-color: yellow;">?v=1.0.0.0</span>"&gt;&lt;/script&gt;
+            ...
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </pre>
+    </div>
+</div>
