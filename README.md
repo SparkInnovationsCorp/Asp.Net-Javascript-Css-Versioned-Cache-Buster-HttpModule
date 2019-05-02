@@ -7,6 +7,8 @@ This is just a simple project to demo the cache buster code.  All script and lin
 using the assemlby version of this web project!
 
 To Use...
---Copy the CacheBusterModule.cs to your project.
---Add a modules reference to your web.config pointing ot the assembly and module name.
---Check that task off, sit back, and have a coffee!
+<ul>
+<li>Copy the CacheBusterModule.cs to your project.</li>
+<li>Add a modules reference to your web.config pointing ot the assembly and module name.</li>
+<li>Check that task off, sit back, and have a coffee!</li>
+</ul>
